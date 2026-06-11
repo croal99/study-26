@@ -17,37 +17,43 @@
 - 内容：硬件虚拟化 vs. 容器化（VMware/VirtualBox vs. Docker）；为什么需要隔离环境；快照与克隆
 - 实操：用VMware创建一台Ubuntu虚拟机，保存快照；安装Docker并运行hello-world容器
 
-**第3课：网络基础（上）—— 分层模型与核心协议**
+**第3课：网络基础**
 - 目标：掌握OSI/TCP-IP模型、IP地址、子网
 - 内容：5层模型作用；IP/子网掩码/网关/DNS；ARP与路由原理
 - 实操：用ping/traceroute测试连通性；用ipconfig/ifconfig查看本机配置
 
-**第4课：网络基础（下）—— Socket与HTTP**
-- 目标：理解端口、TCP三次握手、HTTP请求-响应
-- 内容：端口与服务的绑定；TCP vs UDP；HTTP方法与状态码；抓包初体验
-- 实操：用netstat查看监听端口；用curl模拟GET请求；用Wireshark简单抓包
+**第4课：GIT 版本控制**
+- 目标：理解版本控制的基本概念，能独立使用
+- 内容：版本控制的基本概念（工作区/暂存区/仓库）；常用命令（init/clone/status/add/commit/log/branch/merge/rebase/push/pull）
+- 实操：在本地初始化一个仓库并完成3次提交；创建分支并合并；配置远端并推送到GitHub/Gitee
+- 作业：完成[Git 入门](https://www.lintcode.com/course/39)
 
 ---
 
 ### 第二阶段：C语言——理解计算机本质（第5-8课）
-**第5课：VS Code基础**
 
 **第5课：C语言起步——内存与指针的前置基础**
+- [C 语言入门：基本语法及运算](https://www.lintcode.com/course/111)
+- [C 语言基础：控制流程语句](https://www.lintcode.com/course/114)
 - 目标：掌握变量、类型、地址概念
 - 内容：基本数据类型；变量在内存中的存储；取地址符&；指针的直观理解（内存门牌号）
 - 实操：编写程序打印变量的地址；用sizeof查看类型字节数
 
 **第6课：指针与数组——栈内存操作**
+- [C 语言基础：数组和字符串](https://www.lintcode.com/course/115)
 - 目标：理解指针运算与数组本质
 - 内容：指针定义与解引用；指针运算；数组与指针的关系；字符串处理（char*）
 - 实操：实现一个字符串拷贝函数；用指针遍历数组
 
 **第7课：动态内存分配与结构体**
+- [C 语言进阶：指针](https://www.lintcode.com/course/117)
+- [C 语言进阶：结构体](https://www.lintcode.com/course/118)
 - 目标：区分堆和栈；组织复合数据
 - 内容：malloc/free；堆与栈的区别；内存泄漏；结构体的定义与使用
 - 实操：动态创建学生结构体数组，并排序
 
-**第8课：C综合实战——迷你命令行工具**
+**第8课：C 语言基础：函数**
+- [C 语言基础：函数](https://www.lintcode.com/course/116)
 - 目标：综合运用指针、内存、文件IO
 - 内容：文件操作（fopen/fread）；命令行参数（argc, argv）；实现类似wc或grep简单版
 - 实操：编写一个程序，统计文本文件的行数、单词数
